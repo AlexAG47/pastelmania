@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Rubik:wght@300&display=swap');
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+
+        #header{
+            background-color: palevioletred;
+            position: relative;
+            display: flex;        
+        }
+
+        #header nav{
+            text-align: right;
+    	    font-size: 18px;
+            margin-left: 55%;
+            margin-top: 25px;
+        }
+
+        #header nav a{
+            padding-right: 30px;
+            text-decoration: none;
+            color: white;
+            font-family: 'Rubik', sans-serif;
+        }
+
+        #header nav a:hover{
+            color: purple;
+            text-decoration: underline purple;
+        }
+
+        #cont-logo img{
+            width: auto;
+            height: auto;
+            max-width: 250px;
+            max-height: 250px;
+        }
+
+        h2{
+            margin-top: 50px;
+            color: palevioletred;
+            font-family: 'Fredoka', sans-serif;
+            text-align: center;
+        }
+
+        #cont-tablas{
+            width: 900px; 
+            margin: 0 auto;
+        }
+
+        #cont-tablas div{
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+        }
+
+        tftable {
+            font-size:12px;
+            color:#080808;
+            width:100%;
+            border: solid 2px palevioletred;
+            border-collapse: collapse;
+        }
+        .tftable th {font-size:12px;
+            background-color:palevioletred;
+            padding: 8px;
+            text-align:center;
+            border: solid 2px palevioletred;
+            font-family: 'Rubik', sans-serif;;
+        }
+        .tftable tr {
+            background-color:#ffffff;
+        }
+        .tftable td {
+            font-size:12px;
+            border-width: 1px;
+            padding: 8px;
+            border: solid 2px palevioletred;
+            font-family: 'Rubik', sans-serif;;
+        }
+        .tftable tr:hover {
+            background-color:pink;
+        }
+
+        footer{
+            height: 30px;
+            margin-top: 50px;
+            padding: 5px;
+            background: palevioletred;
+            color: white;
+            text-align: center;
+        }
+
+    </style>
+    <div id="header">
+        <div id="cont-logo">
+            <img src="img/logo_large.png">
+        </div>
+        <nav>
+            <a href="#">Sabores</a>
+            <a href="#">Adornos</a>
+            <a href="#">Pedidos</a>
+        </nav>
+    </div>
+    <div id="cont-tablas">
+        <h2>Sabores disponibles</h2>
+        <div id="tabla1">
+            <table class="tftable" border="1">
+                <tr><th>Sabor</th><th>Cantidad</th></tr>
+                <tr><td>Chocolate</td><td>5</td></tr>
+                <tr><td>Vainilla</td><td>2</td></tr>
+                <tr><td>Fresa</td><td>7</td></tr>
+            </table>
+        </div>
+        <h2>Adornos disponibles</h2>
+        <div id="tabla2">
+            <table class="tftable" border="1">
+                <tr><th>Adorno</th><th>Cantidad</th></tr>
+                <tr><td>Fondant</td><td>10 pliegues</td></tr>
+                <tr><td>Crema Pastelera</td><td>2 latas</td></tr>
+                <tr><td>Crema Chantilly</td><td>3 latas</td></tr>
+            </table>
+        </div>
+        <h2>Pedidos</h2>
+        <div id="tabla3">
+            <table class="tftable" border="1">
+            <tr>
+                <th>Nombre</th>
+                <th>Dirección</th>
+                <th>Teléfono</th>
+                <th>Correo</th>
+                <th>Sabor base</th>
+                <th>Segundo sabor</th>
+                <th>Adorno base</th>
+                <th>Segundo adorno</th>
+                <th>Entrega en</th>
+            </tr>
+                <tr>
+                    <td>Alex Antonio</td>
+                    <td>Calle #3 Sur México</td>
+                    <td>200 000 0000</td>
+                    <td>fulanito@correo.com</td>
+                    <td>Chocolate</td>
+                    <td>Vainilla</td>
+                    <td>Fondant</td>
+                    <td>---</td>
+                    <td>Charola</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        <p>Página hecha para práctica de LaunchX</p>
+    </footer>
+
+</body>
+</html>
